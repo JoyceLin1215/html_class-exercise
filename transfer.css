@@ -1,0 +1,35 @@
+body{
+		background-color:black;
+	}
+	
+	span{
+		color:white;
+		font-size:60px;
+	}
+	#first{
+		display:none;
+		position:absolute;
+		top:280;
+		left:350;
+	}
+	#second{
+		display:none;
+		position:absolute;
+		top:350;
+		left:350;
+	}
+	
+	#btn{
+		display:none;
+		position:absolute;
+		top:500;
+		left:1100;
+		
+		border-radius:40px;
+		border-color:#f3f2da;
+		background-color:#f3f2da;
+		width:200px;
+		height:50px;
+		font-size:20;
+		font-weight:bold;
+	}

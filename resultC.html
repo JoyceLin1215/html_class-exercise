@@ -1,0 +1,92 @@
+<html>   
+<head>
+	<meta charset="utf-8">
+	<script src="http://code.jquery.com/jquery-2.1.4.js"></script>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500;900&family=Noto+Serif+TC:wght@500;600&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="resultC.css" type="text/css" />
+	
+	<script>
+	function openp1(){
+	window.open("https://hiking.biji.co/index.php?q=news&act=info&id=2964");
+	}
+	function openp2(){
+	window.open("https://www.hotelscombined.com.tw/news/%E6%BD%9B%E6%B0%B4/");
+	}
+	function openp3(){
+	window.open("./form.html");
+	}
+	
+	$(function(){
+		$('#cover1').hide();
+		$('#cover2').hide();
+		$('#cover3').hide();
+			
+	$('#p1').mouseenter(function(){
+		$('#cover1').fadeIn('fast');
+		$('#cover1').show();
+			});
+	$('#cover1').mouseleave(function(){
+		$('#cover1').fadeOut('fast');
+		});
+		
+	$('#p2').mouseenter(function(){
+		$('#cover2').fadeIn('fast');
+		});	
+	$('#cover2').mouseleave(function(){
+		$('#cover2').fadeOut('fast');
+		});
+		
+	$('#p3').mouseenter(function(){
+		$('#cover3').fadeIn('fast');
+			});	
+	$('#cover3').mouseleave(function(){
+		$('#cover3').fadeOut('fast');
+		});
+	
+});
+</script>
+	
+</head>
+
+<body>
+<div class="section">
+	<div id="title">根據剛剛的選擇，</div>
+	<img src="./Media/C.jpg">
+	<div id="index">活潑外向，個性直率是大家對你的第一印象<br>
+	對於不喜歡的人、事、物，你不會裝模作樣，總是直來直往。<br>
+	生活也奉行著及時行樂的原則，<br>
+	讓身邊的人和你相處時，都能感受到快活的氣氛。
+	</div><br>
+</div>
+
+<div class="section">
+	<div id="bg">
+		<span id="second">
+		給 樂於接受各種可能性的你，<br>
+		是時候約朋友出門走走了
+		</span>
+	</div>
+
+	<div class="container" id="con">
+		<div class="row">
+			<div class="col-xs-12  col-sm-4 col-md-4 col-lg-4"><img src="Media/p3/pic1.jpg" class= "img-responsive" id="p1"></img></div>
+			<div class="col-xs-12  col-sm-4 col-md-4 col-lg-4"><img src="Media/p3/pic2.jpg" class= "img-responsive" id="p2"></img></div>
+			<div class="col-xs-12  col-sm-4 col-md-4 col-lg-4"><img src="Media/p3/pic3.png" class= "img-responsive" id="p3"></img></div>
+		</div>
+	</div>
+	
+<div class="container" id="blc">	
+		<div class="row">
+			<div class="col-xs-12  col-sm-4 col-md-4 col-lg-4"><img src="Media/p3/pic4-05.jpg" class= "img-responsive" id="cover1" onclick="openp1()"></img></div>
+			<div class="col-xs-12  col-sm-4 col-md-4 col-lg-4"><img src="Media/p3/pic4-06.jpg" class= "img-responsive" id="cover2" onclick="openp2()"></img></div>
+			<div class="col-xs-12  col-sm-4 col-md-4 col-lg-4"><img src="Media/p3/pic4-07.jpg" class= "img-responsive" id="cover3" onclick="openp3()"></img></div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

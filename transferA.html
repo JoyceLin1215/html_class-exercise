@@ -1,0 +1,39 @@
+<html>   
+<head>
+	<meta charset="utf-8">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<script src="http://code.jquery.com/jquery-2.1.4.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="transfer.css" type="text/css" />
+
+	<script>
+   function GoFadeIn() {
+              $('#first').fadeIn(3000, function() {
+				$("#first").fadeOut(5000);
+				window.setTimeout(GoFadeIn2(), 10000);
+              });
+}
+   function GoFadeIn2() {
+              $('#second').fadeIn(10000,function() {
+				window.setTimeout($("#btn").fadeIn(500), 10000);
+			  });
+}
+
+	$(document).ready(function(){
+		$(function(){ $('#btn').click(function(){ 
+			window.location="resultA.html";
+			});  
+		}); 
+	});
+
+</script>
+</head>
+
+<body onload="GoFadeIn()">
+<span id="first" >轉瞬間，眼前只剩一片黑暗</span><br>
+
+<span id="second">等等，所以我剛剛到底經歷了甚麼...?</span><br>
+<button id="btn">CLICK</button>
+</body>
+
+</html>
